@@ -19,9 +19,6 @@ export default function AddAndEditPage(){
     }
 
     const handleOnChange = (identifier, event) => {
-        if(identifier === "dueDate"){
-            console.log(event.target.value)
-        }
         setTask((prevState) => ({
         ...prevState,
         [identifier]: event.target.value,
@@ -45,17 +42,13 @@ export default function AddAndEditPage(){
 
     const handleOnSubmit = async (event) => {
         event.preventDefault();
-        console.log(task)
         try{
             if(id){
                 const {__v, ...reData} = task
-                console.log("task b update", reData)
                 const {data} = await updateTask(id, reData)
-                console.log("task update", data)
                 dispatch({type: ACTIONS.UPDATE_TASK, id, payload: data})
             }else{
                 const {data} = await createTask(task)
-                console.log("task  create", data)
                 dispatch({type: ACTIONS.ADD_TASK, payload: data})
             }
             navigate('/home');

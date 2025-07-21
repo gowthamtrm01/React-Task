@@ -19,7 +19,6 @@ export default function SignUpForm({setSignInForm}){
         event.preventDefault();
         try{
             const { data } = await signUpUser(user);
-            console.log("signup", data)
             authLogin({ AuthUser: data.result.email });
             Cookies.set("token", data.token, { expires: 1 });
             SetUser(initSignUp)

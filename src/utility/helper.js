@@ -15,6 +15,5 @@ export function changeDateFormat(date){
 
 export function mapEditTask(task){
     const taskAttr = task
-    console.log({...taskAttr, dueDate: changeDateFormat(task.dueDate)})
     return {...taskAttr, dueDate: changeDateFormat(task.dueDate)}
 }
