@@ -1,0 +1,6 @@
+.loginbg{
+  background: linear-gradient(to bottom right, #ffff, #4444a3);
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
