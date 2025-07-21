@@ -16,7 +16,7 @@ function reducer(state, action) {
         case ACTIONS.UPDATE_TASK:
             return state.map((item) => item._id === action.id ? action.payload : item)
         case ACTIONS.DELETE_TASK:
-            return state.filter((item) => item.id !== action.id)
+            return state.filter((item) => item._id !== action.id)
         default:
             return state
     }

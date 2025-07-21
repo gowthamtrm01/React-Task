@@ -21,7 +21,6 @@ export default function HomePage(){
         try{
             const {data} = await fetchTask();
             const updatedTask = data.map(item => ({...item, dueDate: dateFormat(item.dueDate)}))
-            console.log(updatedTask)
             dispatch({type: ACTIONS.INITIAL_TASK, payload:updatedTask})
         }catch(err){
             console.log("tasks: ", err.message)
