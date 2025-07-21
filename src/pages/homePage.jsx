@@ -1,6 +1,6 @@
 import { fetchTask } from "../api";
 import ListHeader from "../components/ListHeader";
-import Tasks from "../components/tasks";
+import Tasks from "../components/Tasks";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { dateFormat } from "../utility/helper";

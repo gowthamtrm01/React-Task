@@ -1,22 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# React-Task
-Creating React application (Task) with basic CURD operation with authentication and authorization
->>>>>>> f53f20260569f907d0980bfe2772e043b8e74267
-=======
-# React-Task
-Create React project with CRUD application
->>>>>>> 27cc5751ff5ad6394698a68e7ad6e8b638b864d3
+In React Application I created basic CRUD operation.
+I implement like redux with the help useContext and useReducer.
+For CSS styling I used tailwind css library.
+For saving and retrieving token I use cookies with help of js-cookies library.
+I did'nt implement logout function if you remove the cookies token it will automatically redirect to the login page.
+If give more time I'm able complete the entire application.

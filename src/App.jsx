@@ -14,7 +14,7 @@ function App() {
       <TaskProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/login" element={<SignInAndSignUpPage/>}/>
+            <Route path="/" exact element={<SignInAndSignUpPage/>}/>
             <Route element={<ProtectedRotes/>}>
               <Route path="/home" element={<HomePage/>} />
               <Route path="/addTask" element={<AddAndEditPage/>}/>

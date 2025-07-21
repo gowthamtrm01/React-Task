@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 function ProtectedRotes() {
     const {authUser} = useAuth()
     const user = authUser || Cookies.get('token')
-    return user ? <Outlet/> : <Navigate to="/login"/>
+    return user ? <Outlet/> : <Navigate to="/"/>
 }
 
 export default ProtectedRotes;
