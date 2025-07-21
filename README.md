@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -15,3 +16,7 @@ If you are developing a production application, we recommend using TypeScript wi
 # React-Task
 Creating React application (Task) with basic CURD operation with authentication and authorization
 >>>>>>> f53f20260569f907d0980bfe2772e043b8e74267
+=======
+# React-Task
+Create React project with CRUD application
+>>>>>>> 27cc5751ff5ad6394698a68e7ad6e8b638b864d3
